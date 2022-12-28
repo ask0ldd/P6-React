@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+}
+
+nav ul {
+  display: flex;
+  width: 310px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+img {
+  height: 68px;
+}
