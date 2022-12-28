@@ -44,3 +44,7 @@ a:active {
   text-decoration: underline;
   color: #ff6060;
 }
+
+.active-link:visited {
+  color: blue;
+}

@@ -4,6 +4,7 @@ import './index.css';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
 import APropos from './pages/APropos';
+import Rental from './pages/Rental';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/404" element={<Page404 />}/>
         <Route path="/apropos" element={<APropos />}/>
+        <Route path="/hebergement" element={<Rental />}/>
       </Routes>
     </Router>
   </React.StrictMode>
