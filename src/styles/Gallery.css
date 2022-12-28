@@ -1,6 +1,10 @@
 #gallery {
-  width: 1240px;
+  width: 100%;
   background: #f7f7f7;
   border-radius: 25px;
   padding: 56px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 60px;
+  margin-top: 40px;
 }

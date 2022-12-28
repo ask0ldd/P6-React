@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App';
+import Home from './pages/Home';
+import Page404 from './pages/Page404';
+import APropos from './pages/APropos';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/404" element={<Page404 />}/>
+        <Route path="/apropos" element={<APropos />}/>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

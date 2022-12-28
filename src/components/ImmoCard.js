@@ -1,10 +1,10 @@
 import '../styles/ImmoCard.css'
 
-const ImmoCard = () => {
+const ImmoCard = (props) => {
     return (
-    <article>
+    <article className="immocard">
         <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="Appartement cosy"/>
-        <div>Appartement cosy<br/>Appartement cosy</div>
+        <div>{props.id} - Appartement cosy <br /> Appartement cosy - {props.description}</div>
     </article>
     )
 }

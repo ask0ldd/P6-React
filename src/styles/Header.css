@@ -5,13 +5,21 @@ header {
   margin-top: 40px;
 }
 
-nav ul {
-  display: flex;
-  width: 310px;
-  list-style: none;
-  justify-content: space-between;
+header img {
+  height: 68px;
 }
 
-img {
-  height: 68px;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6060;
+}
+
+nav ul {
+  display: flex;
+  width: 240px;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 24px;
 }

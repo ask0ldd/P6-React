@@ -1,5 +1,6 @@
-article {
-  width: 340px;
+.immocard {
+  flex: 1 1 340px;
+  /*max-width: 340px;*/
   height: 340px;
   background: #ff6060;
   border-radius: 10px;
@@ -8,13 +9,13 @@ article {
   color: #ffffff;
 }
 
-article img {
+.immocard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-article div {
+.immocard div {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,4 +29,5 @@ article div {
   display: flex;
   align-items: flex-end;
   padding: 20px;
+  text-align: left;
 }
