@@ -1,6 +1,5 @@
 import '../styles/App.css'
 import Header from '../components/Header'
-import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
 
@@ -12,17 +11,15 @@ const collapses = [
 ]
 
 
-function APropos() {
+function Rental() {
   return (
     <div className="App">
       <Header/>
       <main>
-        <Banner key="apropos" type="apropos"/>
-        {collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} />))}
       </main>
       <Footer/>
     </div>
   );
 }
 
-export default APropos
+export default Rental

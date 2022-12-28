@@ -22,4 +22,25 @@ nav ul {
   list-style: none;
   justify-content: space-between;
   font-size: 24px;
+  font-weight: 500;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff6060;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #ff6060;
 }

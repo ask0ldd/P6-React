@@ -1,9 +1,13 @@
 import '../styles/Banner.css'
 
-const Banner = () => {
+const Banner = (props) => {
+
+    const text = props.type === 'standard' ? 'Chez vous, partout et ailleurs' : ''
+    const CSSClass = props.type !== 'standard' ? 'banner-'+props.type : 'banner'
+
     return (
-    <section id="banner">
-        Chez vous, partout et ailleurs
+    <section className={CSSClass}>
+        {text}
     </section>
     )
 }
