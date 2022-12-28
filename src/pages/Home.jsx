@@ -13,7 +13,7 @@ function App() {
         <Gallery/>
       </main>
       <Footer/>
-    </div>
+      </div>
   );
 }
 

@@ -25,11 +25,7 @@ nav ul {
   font-weight: 500;
 }
 
-a:link {
-  text-decoration: none;
-  color: #ff6060;
-}
-
+a:link,
 a:visited {
   text-decoration: none;
   color: #ff6060;
@@ -45,6 +41,7 @@ a:active {
   color: #ff6060;
 }
 
-.active-link:visited {
-  color: blue;
+a.active-link {
+  text-decoration: underline;
+  color: #ff6060;
 }
