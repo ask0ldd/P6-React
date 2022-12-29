@@ -1,4 +1,12 @@
 #collapsesContainer {
   display: flex;
   column-gap: 75px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  #collapsesContainer {
+    flex-direction: column;
+  }
 }

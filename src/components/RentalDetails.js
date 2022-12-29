@@ -1,6 +1,7 @@
 import '../styles/RentalDetails.css'
 import Tags from '../components/Tags'
 import Ratings from '../components/Ratings'
+import Host from '../components/Host'
 
 const RentalDetails = () => {
     return (
@@ -11,6 +12,7 @@ const RentalDetails = () => {
         <Tags />
       </div>
       <div id="ownerNratings">
+        <Host />
         <Ratings />
       </div>
     </section>

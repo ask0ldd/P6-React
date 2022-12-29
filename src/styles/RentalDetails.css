@@ -2,7 +2,9 @@
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
+  row-gap: 20px;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 #headingNtags {

@@ -29,7 +29,7 @@ const Ratings = () => {
     buildRatings(rating)
 
     return (
-    <div className="starsContainer">
+    <div className="starsContainer" style={{marginTop:"10px"}}>
         {ratingsArray.map((r) => <Star key={r.key} src={r.src}/>)}
     </div>
     )
