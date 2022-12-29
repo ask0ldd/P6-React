@@ -9,14 +9,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-/*const collapses = [
-  {"key" : "Description", "heading": "Description", "body" : "Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied)."},
-  {"key" : "Équipements", "heading": "Équipements", "body" : 'Climatisation<br />Wi-Fi<br>Cuisine<br>Espace de travail<br>Fer à repasser<br>Sèche-cheveux<br>Cintres'}
-]*/
-
 function Rental() {
-
-  //console.log(window.location.origin)
 
   const [jsonDatas, setJsonDatas] = useState();
 
@@ -28,9 +21,7 @@ function Rental() {
 
   let rentalId = useParams().id;
   
-  //console.log(rentalId)
-  
-  if(jsonDatas)
+  if(jsonDatas) // seulement qd promise resolved
   {
     const rentalDatas = jsonDatas[rentalId]
     return (
@@ -51,8 +42,3 @@ function Rental() {
 }
 
 export default Rental
-
-/*
-{collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} fontsize="18px"/>))}
-<Collapse key={jsonDatas[0].id} heading="Description" body={jsonDatas[0].description} fontsize="18px"/>
-*/
