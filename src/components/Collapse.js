@@ -8,7 +8,7 @@ const Collapse = (props) => {
     return (
     <article className="collapse">
         <div onClick={()=>updateBodyDisplay(!bodyDisplay)} className="collapse__heading" style={{fontSize:props.fontsize}}>
-            {props.heading}
+            <div>{props.heading}</div><div>arrow</div>
         </div>
         {bodyDisplay === true &&
         <div className="collapse__body" style={{fontSize:props.fontsize}}>
