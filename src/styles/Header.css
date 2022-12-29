@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 68px;
   margin-top: 40px;
 }

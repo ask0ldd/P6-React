@@ -6,3 +6,10 @@
   display: flex;
   column-gap: 10px;
 }
+
+@media screen and (max-width: 380px) {
+  .star-red {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -4,15 +4,15 @@ import { PropTypes } from 'prop-types'
 const ImmoCard = (props) => {
     return (
     <article className="immocard">
-        <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="Appartement cosy"/>
-        <div>{props.nom} - Appartement cosy <br /> Appartement cosy - {props.description}</div>
+        <img src={props.cover} alt="Appartement cosy"/>
+        <div><p>{props.title}</p></div>
     </article>
     )
 }
 
 ImmoCard.propTypes = {
-    nom: PropTypes.string,
-    description: PropTypes.string
+    title: PropTypes.string,
+    cover: PropTypes.string
 }
 
 export default ImmoCard

@@ -1,7 +1,7 @@
 .immocard {
-  flex: 1 1 340px;
+  /*flex: 1 1 340px;*/
   /*max-width: 340px;*/
-  height: 340px;
+  height: 100%;
   background: #ff6060;
   border-radius: 10px;
   overflow: hidden;
@@ -13,6 +13,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .immocard div {
@@ -30,4 +33,8 @@
   align-items: flex-end;
   padding: 20px;
   /*text-align: left;*/
+}
+
+.immocard p {
+  max-width: 240px;
 }

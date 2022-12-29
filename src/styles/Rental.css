@@ -1,7 +1,7 @@
 #collapsesContainer {
   display: flex;
   column-gap: 75px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
 
