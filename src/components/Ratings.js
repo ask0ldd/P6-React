@@ -8,29 +8,21 @@ const Star = (props) => {
     )
 }
 
-const Ratings = () => {
-
-    let ratingsArray = []
-    const rating = "3"
+const Ratings = (props) => {
 
     const buildRatings = (x) => 
     {
-        let i=0
-        do{
-            ratingsArray.push({"key":"star"+i, "src" : "redstar"})
-            i++
-        }while(i<x)
-        do{
-            ratingsArray.push({"key":"star"+i, "src" : "greystar"})
-            i++
-        }while(i<5)
+        let ratings = ["","","","",""]
+        ratings.fill({"src" : "redstar"}, 0, 5)
+        if(x<5) ratings.fill({"src" : "greystar"}, x, 5)
+        return ratings
     }
 
-    buildRatings(rating)
+    const ratingsArray = buildRatings(parseInt(props.rating))
 
     return (
     <div className="starsContainer">
-        {ratingsArray.map((r) => <Star key={r.key} src={r.src}/>)}
+        {ratingsArray.map((r, index) => <Star key={index} src={r.src}/>)}
     </div>
     )
 }
