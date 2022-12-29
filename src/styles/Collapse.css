@@ -19,6 +19,19 @@
   padding: 0 20px;
 }
 
+.collapse__heading img {
+  margin-top: 2px;
+  width: 27px;
+  height: 16px;
+  /*transition-property: transform 2s;*/
+  /*transition-duration: 0.2s;
+  transition-timing-function: ease-in;*/
+}
+
+/*.collapse__heading:hover img {
+  transform: rotate(180deg);
+}*/
+
 .collapse__body {
   background: #f7f7f7;
   border-radius: 5px;

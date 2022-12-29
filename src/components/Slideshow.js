@@ -1,5 +1,6 @@
 import '../styles/Slideshow.css'
 import { useState } from 'react'
+import arrow from '../assets/arrow-right.svg'
 
 const Slideshow = (props) => {
 
@@ -22,8 +23,8 @@ const Slideshow = (props) => {
     <section className='slideshow'>
         <img src={imageUrls[indexImg]} alt="temp"/>
         {imageUrls.length > 1 ? <div className="buttons-container"> 
-            <div onClick={nextImg}></div>
-            <div onClick={prevImg}></div>
+            <div onClick={prevImg}><img id="prevArrow" src={arrow} alt="arrow previous" /></div>
+            <div onClick={nextImg}><img src={arrow} alt="arrow next" /></div>
         </div> : ''}
     </section>
     )
