@@ -1,0 +1,4 @@
+#collapsesContainer {
+  display: flex;
+  column-gap: 75px;
+}

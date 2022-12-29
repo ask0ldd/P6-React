@@ -1,0 +1,8 @@
+.star-red {
+  width: 30px;
+  height: 30px;
+}
+.starsContainer {
+  display: flex;
+  column-gap: 10px;
+}

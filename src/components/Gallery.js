@@ -11,7 +11,7 @@ const logements = [
 const Gallery = () => {
     return (
     <section id="gallery">
-        {logements.map((logement) => (<a href="hebergement"><ImmoCard key={logement.key} nom={logement.nom} description={logement.description}/></a>))}
+        {logements.map((logement) => (<a href="hebergement" key={'link'+logement.key}><ImmoCard nom={logement.nom} description={logement.description}/></a>))}
     </section>
     )
 }

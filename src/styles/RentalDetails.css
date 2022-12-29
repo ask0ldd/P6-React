@@ -1,0 +1,11 @@
+#rentalDetails {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#headingNtags {
+  display: flex;
+  flex-direction: column;
+}
