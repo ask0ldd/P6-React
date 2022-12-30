@@ -7,7 +7,8 @@ footer {
   justify-content: flex-end;
   color: #fff;
   padding-bottom: 30px;
-  margin-top: 45px;
+  /*margin-top: 45px;*/
+  margin-top: auto;
   text-align: center;
 }
 

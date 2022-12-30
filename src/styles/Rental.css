@@ -5,8 +5,16 @@
   flex-direction: row;
 }
 
+.main-rental {
+  padding-bottom: 45px;
+}
+
 @media screen and (max-width: 800px) {
   #collapsesContainer {
     flex-direction: column;
+  }
+
+  .main-rental {
+    padding-bottom: 15px;
   }
 }

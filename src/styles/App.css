@@ -4,6 +4,7 @@
   flex-direction: column;
   max-width: 1240px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -39,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-home {
+  padding-bottom: 45px;
 }

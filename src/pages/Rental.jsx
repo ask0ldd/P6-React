@@ -27,7 +27,7 @@ function Rental() {
     return (
       <div className="App">
         <Header/>
-        <main>
+        <main className='main-rental'>
           <Slideshow picslist={rentalDatas.pictures}/>
           <RentalDetails datas={{'rating' : rentalDatas.rating, 'host' : rentalDatas.host, 'title' : rentalDatas.title, 'location' : rentalDatas.location, 'tags' : rentalDatas.tags}}/>
           <div id="collapsesContainer">

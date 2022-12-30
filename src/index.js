@@ -1,24 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './pages/Home';
-import Page404 from './pages/Page404';
-import APropos from './pages/APropos';
-import Rental from './pages/Rental';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import CustomRouter from './components/CustomRouter';
 import reportWebVitals from './reportWebVitals';
+//import FooterExtension from './components/FooterExtension';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/404" element={<Page404 />}/>
-        <Route path="/apropos" element={<APropos />}/>
-        <Route path="/hebergement/:id" element={<Rental />}/>
-      </Routes>
-    </Router>
+    <CustomRouter/>
   </React.StrictMode>
 );
 

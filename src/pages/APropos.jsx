@@ -16,7 +16,7 @@ function APropos() {
   return (
     <div className="App">
       <Header/>
-      <main>
+      <main className='main-apropos'>
         <Banner key="apropos" type="apropos"/>
         <section id="collapses-section">
         {collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} fontsize="24px"/>))}

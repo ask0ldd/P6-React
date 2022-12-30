@@ -22,7 +22,7 @@ function App() {
     return (
       <div className="App">
         <Header/>
-        <main>
+        <main className='main-home'>
           <Banner key="standard" type="standard"/>
           <Gallery dataset={jsonDatas} />
         </main>
