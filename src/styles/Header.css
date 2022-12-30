@@ -47,10 +47,14 @@ a.active-link {
   color: #ff6060;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   nav ul li {
     font-size: 12px;
     text-transform: uppercase;
+  }
+
+  nav ul {
+    width: 140px;
   }
 
   header img {

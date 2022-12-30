@@ -7,15 +7,14 @@ const Collapse = (props) => {
 
     const [bodyDisplay, updateBodyDisplay] = useState(false)
 
+    //console.log(typeof(props.body))
     return (
     <article className="collapse">
         <div onClick={()=>updateBodyDisplay(!bodyDisplay)} className="collapse__heading" style={{fontSize:props.fontsize}}>
             <div>{props.heading}</div><img src={bodyDisplay === true ? arrowUp : arrowDown} alt="arrow" />
         </div>
         {bodyDisplay === true &&
-        <div className="collapse__body" style={{fontSize:props.fontsize}}>
-            {props.body}
-        </div>}
+        <div className="collapse__body" style={{fontSize:props.fontsize}} dangerouslySetInnerHTML={{__html: props.body}} />}
     </article>
     )
 }
@@ -23,3 +22,4 @@ const Collapse = (props) => {
 export default Collapse
 
 /* onClick meilleur avec css*/
+/* {{__html:String(props.body)}} */
