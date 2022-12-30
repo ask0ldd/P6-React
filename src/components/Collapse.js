@@ -24,6 +24,3 @@ const Collapse = (props) => {
 }
 
 export default Collapse
-
-/* onClick meilleur avec css*/
-/* {{__html:String(props.body)}} */

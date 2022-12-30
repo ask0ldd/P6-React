@@ -1,7 +1,5 @@
 import '../styles/Header.css'
 import logo from '../assets/kasa.svg'
-//import { Link } from 'react-router-dom'
-//import NavItem from './NavItem'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {

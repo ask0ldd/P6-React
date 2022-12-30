@@ -8,10 +8,11 @@ const CustomRouter = () => {
     return (
         <Router>
             <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/404" element={<Page404 />}/>
-            <Route path="/apropos" element={<APropos />}/>
-            <Route path="/hebergement/:id" element={<Rental />}/>
+                <Route path='*' element={<Page404 />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/404" element={<Page404 />}/>
+                <Route path="/apropos" element={<APropos />}/>
+                <Route path="/hebergement/:id" element={<Rental />}/>
             </Routes>
         </Router>
     )
