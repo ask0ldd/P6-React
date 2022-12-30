@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 //import logements from '../datasets/logements.json'
 
-function App() {
+function Home() {
 
   console.log(window.location.origin)
 
@@ -31,4 +31,4 @@ function App() {
     );
 }
 
-export default App
+export default Home
