@@ -15,30 +15,31 @@ function Rental() {
 
   useEffect(() => 
     {
+      // window.location.origin flavien
       const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => {setJsonDatas(datas)}).catch(error=> console.log(error));
       fetching()
     },[]);
 
   let rentalId = useParams().id;
   
-  if(jsonDatas) // seulement qd promise resolved
-  {
-    const rentalDatas = jsonDatas[rentalId]
-    return (
-      <div className="App">
-        <Header/>
-        <main className='main-rental'>
-          <Slideshow picslist={rentalDatas.pictures}/>
-          <RentalDetails datas={{'rating' : rentalDatas.rating, 'host' : rentalDatas.host, 'title' : rentalDatas.title, 'location' : rentalDatas.location, 'tags' : rentalDatas.tags}}/>
-          <div id="collapsesContainer">
-            <Collapse key={"description"+rentalDatas.id} heading="Description" body={rentalDatas.description} fontsize="18px"/>
-            <Collapse key={"equipements"+rentalDatas.id} heading="Equipements" body={rentalDatas.equipments.reduce((ac, cv) => ac+cv+'<br />', '')} fontsize="18px"/>
-          </div>
-        </main>
-        <Footer/>
-      </div>
-    );
-  }
+  // seulement promise not resolved
+  if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>)
+
+  const rentalDatas = jsonDatas[rentalId]
+  return (
+    <div className="App">
+      <Header/>
+      <main className='main-rental'>
+        <Slideshow picslist={rentalDatas.pictures}/>
+        <RentalDetails datas={{'rating' : rentalDatas.rating, 'host' : rentalDatas.host, 'title' : rentalDatas.title, 'location' : rentalDatas.location, 'tags' : rentalDatas.tags}}/>
+        <div id="collapsesContainer">
+          <Collapse key={"description"+rentalDatas.id} heading="Description" body={rentalDatas.description} fontsize="18px"/>
+          <Collapse key={"equipements"+rentalDatas.id} heading="Equipements" body={rentalDatas.equipments.reduce((ac, cv) => ac+cv+'<br />', '')} fontsize="18px"/>
+        </div>
+      </main>
+      <Footer/>
+    </div>
+  );
 }
 
 export default Rental

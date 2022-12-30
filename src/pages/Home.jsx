@@ -7,9 +7,11 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 //import logements from '../datasets/logements.json'
 
-function Home() {
+function App() {
 
-  console.log(window.location.origin)
+  //console.log(window.location.origin)
+
+  console.log("loadhome")
 
   const [jsonDatas, setJsonDatas] = useState();
 
@@ -19,16 +21,19 @@ function Home() {
       fetching()
     },[]);
 
-    return (
-      <div className="App">
-        <Header/>
-        <main className='main-home'>
-          <Banner key="standard" type="standard"/>
-          <Gallery dataset={jsonDatas} />
-        </main>
-        <Footer/>
-      </div>
-    );
+
+  if(!jsonDatas) return(<div className="App"><Header/><Footer/></div>)
+
+  return (
+    <div className="App">
+      <Header/>
+      <main className='main-home'>
+        <Banner key="standard" type="standard"/>
+        <Gallery dataset={jsonDatas} />
+      </main>
+      <Footer/>
+    </div>
+  );
 }
 
-export default Home
+export default App
