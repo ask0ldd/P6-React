@@ -17,8 +17,9 @@ body {
     sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1240px;
-  margin: 0 auto;
+  /*max-width: 1240px;*/
+  /*margin: 0 auto;*/
+  padding: 0 80px;
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
 }
@@ -26,4 +27,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0 20px;
+  }
 }

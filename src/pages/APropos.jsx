@@ -1,4 +1,5 @@
 import '../styles/App.css'
+import '../styles/APropos.css'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
@@ -17,7 +18,9 @@ function APropos() {
       <Header/>
       <main>
         <Banner key="apropos" type="apropos"/>
+        <section id="collapses-section">
         {collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} fontsize="24px"/>))}
+        </section>
       </main>
       <Footer/>
     </div>

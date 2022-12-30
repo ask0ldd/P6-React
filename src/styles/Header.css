@@ -47,7 +47,7 @@ a.active-link {
   color: #ff6060;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   header {
     margin-top: 20px;
     height: 47px;

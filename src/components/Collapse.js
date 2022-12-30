@@ -10,7 +10,6 @@ const Collapse = (props) => {
     const [bodyDisplay, updateBodyDisplay] = useState(false)
 
     //check if uselocation contains hebergement or apropos and assign expected fontsize
-    console.log(useLocation())
     const fontSize = useLocation().pathname.includes("hebergement") ? ['rental-heading', 'rental-body'] : ['apropos-heading', 'apropos-body']
 
     return (
