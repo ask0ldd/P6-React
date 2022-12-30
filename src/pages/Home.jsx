@@ -27,7 +27,7 @@ function App() {
           <Gallery dataset={jsonDatas} />
         </main>
         <Footer/>
-        </div>
+      </div>
     );
 }
 

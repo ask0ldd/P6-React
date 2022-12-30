@@ -45,3 +45,9 @@
 .main-home {
   padding-bottom: 45px;
 }
+
+@media screen and (max-width: 500px) {
+  .main-home {
+    padding-bottom: 20px;
+  }
+}
