@@ -32,3 +32,21 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #ownerNratings {
+    height: 34px;
+  }
+
+  #rentalDetails {
+    margin-top: 13px;
+    row-gap: 15px;
+  }
+  #headingsNtags h1 {
+    font-size: 18px;
+  }
+
+  #headingsNtags p {
+    font-size: 14px;
+  }
+}

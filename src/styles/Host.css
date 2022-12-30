@@ -16,3 +16,15 @@
   object-fit: cover;
   border-radius: 32px;
 }
+
+@media screen and (max-width: 400px) {
+  .hostContainer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+
+  .hostContainer {
+    font-size: 12px;
+  }
+}

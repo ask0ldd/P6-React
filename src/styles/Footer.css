@@ -18,3 +18,11 @@ footer img {
 footer span {
   margin-top: 35px;
 }
+
+@media screen and (max-width: 500px) {
+  footer {
+    margin-top: 25px;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+}

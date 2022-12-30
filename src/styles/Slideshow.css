@@ -39,3 +39,37 @@
 #prevArrow {
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 600px) {
+  .buttons-container div img {
+    height: 40px;
+  }
+
+  .buttons-container div {
+    height: 20px;
+    width: 60px;
+  }
+
+  .slideshow {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slideshow {
+    height: 255px;
+  }
+
+  .buttons-container div img {
+    height: 20px;
+  }
+
+  .buttons-container div {
+    height: 20px;
+    width: 40px;
+  }
+
+  .slideshow {
+    border-radius: 10px;
+  }
+}

@@ -60,6 +60,27 @@
 @media screen and (max-width: 600px) {
   .rental-heading,
   .apropos-heading {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .rental-heading img,
+  .apropos-heading img {
+    height: 12px;
+  }
+
+  .rental-body,
+  .apropos-body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .collapse {
+    margin-top: 20px;
+  }
+  .rental-heading,
+  .apropos-heading {
     font-size: 13px;
     height: 30px;
   }
