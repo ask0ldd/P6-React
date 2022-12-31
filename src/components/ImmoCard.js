@@ -5,7 +5,7 @@ const ImmoCard = (props) => {
     return (
     <article className="immocard">
         <img src={props.cover} alt="Appartement cosy"/>
-        <div><p>{props.title}</p></div>
+        <p>{props.title}</p>
     </article>
     )
 }
@@ -16,3 +16,9 @@ const ImmoCard = (props) => {
 }*/
 
 export default ImmoCard
+
+/*
+
+        <img src={props.cover} alt="Appartement cosy"/>
+        <p>{props.title}</p>
+*/

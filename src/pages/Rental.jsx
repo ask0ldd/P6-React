@@ -17,18 +17,16 @@ function Rental() {
   const [jsonDatas, setJsonDatas] = useState();
 
   useEffect(() => 
-    {
-      const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));
-      fetching()
-    },[]);
+  {
+    const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));
+    fetching()
+  },[]);
   
-  // as long as promise not resolved no rental body
-  if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>)
+  if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>) // as long as the promise isnt resolved : footer & header only
 
-  // check with filter if could find one object with the useparams id
-  const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0]
-  // route /404 not defined so 404
-  if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />)
+  const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0] // check with filter if could find one object containing the useparams id
+  
+  if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />) // route /404 not defined so 404
 
   return (
     <div className="App">

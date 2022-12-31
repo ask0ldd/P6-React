@@ -11,17 +11,19 @@
   line-height: 150%;
 }
 
-#gallery a {
+#gallery .anchor {
   flex: 1 1 340px;
   height: 340px;
 }
 
-@media screen and (max-width: 800px) {
-  #gallery {
-    row-gap: 30px;
-  }
-  #gallery a {
+@media screen and (max-width: 1000px) {
+  #gallery .anchor {
+    flex: 1 1 300px;
     height: 300px;
+  }
+  #gallery {
+    column-gap: 40px;
+    row-gap: 30px;
   }
 }
 
@@ -33,7 +35,7 @@
     margin-top: 20px;
   }
 
-  #gallery a {
+  #gallery .anchor {
     height: 255px;
   }
 }
