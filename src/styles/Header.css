@@ -4,10 +4,12 @@ header {
   flex-wrap: wrap;
   height: 68px;
   margin-top: 40px;
+  width: 100%;
 }
 
 header img {
   height: 68px;
+  width: 210px;
 }
 
 nav {

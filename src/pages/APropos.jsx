@@ -19,7 +19,7 @@ function APropos() {
       <main className='main-apropos'>
         <Banner key="apropos" type="apropos"/>
         <section id="collapses-section">
-        {collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} fontsize="24px"/>))}
+        {collapses.map((collapse) => (<Collapse key={collapse.heading} heading={collapse.heading} body={collapse.body} headnbodystyle={['apropos-heading', 'apropos-body']}/>))}
         </section>
       </main>
       <Footer/>

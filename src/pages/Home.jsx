@@ -11,7 +11,7 @@ function App() {
 
   //console.log(window.location.origin)
 
-  console.log("loadhome")
+  //console.log("loadhome")
 
   const [jsonDatas, setJsonDatas] = useState();
 
@@ -21,19 +21,23 @@ function App() {
       fetching()
     },[]);
 
-
-  if(!jsonDatas) return(<div className="App"><Header/><Footer/></div>)
+  //if(!jsonDatas) return(<div className="App"><Header/><Footer/></div>)
 
   return (
     <div className="App">
       <Header/>
-      <main className='main-home'>
-        <Banner key="standard" type="standard"/>
-        <Gallery dataset={jsonDatas} />
-      </main>
+        <main className='main-home'>
+          <Banner key="standard" type="standard"/>
+          <Gallery dataset={jsonDatas} />
+        </main>
       <Footer/>
     </div>
   );
 }
 
 export default App
+
+/*
+        {jsonDatas && <main className='main-home'><Banner key="standard" type="standard"/>
+        <Gallery dataset={jsonDatas} /></main>}
+*/

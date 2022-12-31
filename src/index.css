@@ -22,6 +22,7 @@ body {
   padding: 0 80px;
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
+  overflow-y: scroll;
 }
 
 code {
