@@ -5,16 +5,12 @@ import Gallery from '../components/Gallery'
 import Footer from '../components/Footer'
 import { useEffect } from 'react'
 import { useState } from 'react'
-//import logements from '../datasets/logements.json'
 
 function App() {
 
-  //console.log(window.location.origin)
-
-  //console.log("loadhome")
-
   const [jsonDatas, setJsonDatas] = useState();
 
+  // logements.json dans public directory ie root
   useEffect(() => 
     {
       const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));

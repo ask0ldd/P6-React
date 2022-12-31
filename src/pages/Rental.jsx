@@ -8,24 +8,28 @@ import RentalDetails from '../components/RentalDetails'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 function Rental() {
+
+  let rentalId = useParams().id;
 
   const [jsonDatas, setJsonDatas] = useState();
 
   useEffect(() => 
     {
-      // window.location.origin flavien
-      const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => {setJsonDatas(datas)}).catch(error=> console.log(error));
+      const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));
       fetching()
     },[]);
-
-  let rentalId = useParams().id;
   
-  // seulement promise not resolved
+  // as long as promise not resolved no rental body
   if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>)
 
-  const rentalDatas = jsonDatas[rentalId]
+  // check with filter if could find one object with the useparams id
+  const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0]
+  // route /404 not defined so 404
+  if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />)
+
   return (
     <div className="App">
       <Header/>

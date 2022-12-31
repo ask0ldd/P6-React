@@ -1,5 +1,6 @@
 import '../styles/Tags.css'
 
+//jamais creer un tag isolé
 const Tag = (props) => {
     return (
     <div className="tag">
