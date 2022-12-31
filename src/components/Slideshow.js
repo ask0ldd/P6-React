@@ -16,7 +16,7 @@ const Slideshow = (props) => {
         indexImg !== 0 ? setIndexImg(indexImg - 1) : setIndexImg(imageUrls.length-1)
     }
 
-    return ( // no arrows if only one pic / deal with no pics
+    return ( // no arrows if one pic only / deal with no pics
     <section className='slideshow'>
         <img src={imageUrls[indexImg]} alt="temp"/>
         {imageUrls.length > 1 ? <div className="buttons-container"> 
