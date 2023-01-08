@@ -1,6 +1,6 @@
-import '../styles/Ratings.css'
-import redstar from '../assets/redstar.svg'
-import greystar from '../assets/greystar.svg'
+import '../../styles/Ratings.css'
+import redstar from '../../assets/redstar.svg'
+import greystar from '../../assets/greystar.svg'
 
 const Star = (props) => {
     return (

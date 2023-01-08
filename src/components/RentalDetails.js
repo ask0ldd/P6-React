@@ -1,6 +1,6 @@
 import '../styles/RentalDetails.css'
-import Tags from '../components/Tags'
-import Ratings from '../components/Ratings'
+import Tags from '../components/Tags/Tags'
+import Ratings from '../components/Ratings/Ratings'
 import Host from '../components/Host'
 
 const RentalDetails = (props) => {
