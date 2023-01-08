@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import CustomRouter from './components/CustomRouter';
 import reportWebVitals from './reportWebVitals';
-//import FooterExtension from './components/FooterExtension';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

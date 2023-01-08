@@ -6,7 +6,7 @@ const Banner = (props) => {
     const bannerCSSClass = props.type !== 'standard' ? 'banner-'+props.type : 'banner'
 
     return (
-    <section className={bannerCSSClass} dangerouslySetInnerHTML= {{__html:bannerText}} >
+    <section className={bannerCSSClass} dangerouslySetInnerHTML={{__html:bannerText}} >
     </section>
     )
 }

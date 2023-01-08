@@ -10,7 +10,8 @@ header {
 
 header img {
   height: 68px;
-  width: 210px;
+  /*width: 210px;*/
+  width: fit-content;
 }
 
 nav {
@@ -66,6 +67,7 @@ a.active-link {
 
   header img {
     height: 47px;
+    width: fit-content;
   }
 }
 
