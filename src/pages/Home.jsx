@@ -3,12 +3,10 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Footer from '../components/Footer'
-import { useState } from 'react'
+//import { useState } from 'react'
 import { useFetch } from '../hooks/FetchHook'
 
 function App() {
-
-  const [jsonDatas, setJsonDatas] = useState();
 
   // using customhook + logements.json dans public directory ie root = window.location.origin
   const [isLoading, fetchedData, isfetchError] = useFetch(window.location.origin+'/logements.json')
