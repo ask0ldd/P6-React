@@ -4,7 +4,7 @@ export function useFetch(url) {
 
     const [fetchedData, setFetchedData] = useState()
     const [isLoading, setLoading] = useState(true)
-    const [error, setError] = useState()
+    const [isError, setError] = useState(false)
 
     useEffect(() => {
 
@@ -31,6 +31,6 @@ export function useFetch(url) {
 
     }, [url])
 
-return [isLoading, fetchedData]
+return [isLoading, fetchedData, isError]
 
 }

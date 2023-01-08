@@ -10,15 +10,15 @@ function App() {
 
   const [jsonDatas, setJsonDatas] = useState();
 
-  // logements.json dans public directory ie root
-  const [isLoading, fetchedData] = useFetch(window.location.origin+'/logements.json')
+  // using customhook + logements.json dans public directory ie root = window.location.origin
+  const [isLoading, fetchedData, isfetchError] = useFetch(window.location.origin+'/logements.json')
 
   return (
     <div className="App">
       <Header/>
         <main className='main-home'>
           <Banner key="standard" type="standard"/>
-          <Gallery dataset={fetchedData} /> {/* <Gallery dataset={jsonDatas} /> */}
+          <Gallery dataset={fetchedData} error={isfetchError} loadingState={isLoading} />
         </main>
       <Footer/>
     </div>
