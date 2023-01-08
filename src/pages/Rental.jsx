@@ -5,28 +5,21 @@ import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
 import Slideshow from '../components/Slideshow'
 import RentalDetails from '../components/RentalDetails'
-import { useEffect } from 'react'
-import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
+import { useFetch } from '../hooks/FetchHook'
 
 function Rental() {
 
   let rentalId = useParams().id; // get id from the uri
 
-  const [jsonDatas, setJsonDatas] = useState();
-
-  useEffect(() => 
-  {
-    const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));
-    fetching() // useeffect needs a function not a promise
-  },[]);
+  const [isLoading, jsonDatas, isfetchError] = useFetch(window.location.origin+'/logements.json')
   
-  if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>) // as long as the promise isnt resolved : footer & header only
+  if(isLoading || isfetchError) return (<div className="App"><Header/><Footer/></div>) // as long as data isnt fetched : footer & header only
 
   const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0] // check with filter if could find one object containing the useparams id
   
-  if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />) // route /404 not defined so 404
+  if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />) // if not : route /404 not defined so 404
 
   return (
     <div className="App">
