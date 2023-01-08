@@ -17,9 +17,6 @@ body {
     sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*max-width: 1240px;*/
-  /*margin: 0 auto;*/
-  padding: 0 80px;
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
   overflow-y: scroll;
@@ -30,14 +27,16 @@ code {
     monospace;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
+@media screen and (max-width: 1320px) {
+  main,
+  header {
     padding: 0 40px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  body {
+  main,
+  header {
     padding: 0 20px;
   }
 }

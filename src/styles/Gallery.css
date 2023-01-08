@@ -1,6 +1,7 @@
 #gallery {
   width: 100%;
-  background: #f7f7f7;
+  /*background-color: #f7f7f7;*/
+  background-color: #f0f0f0; /* temporaire pour streaming sountenance */
   border-radius: 25px;
   padding: 56px 50px;
   display: flex;

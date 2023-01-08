@@ -8,6 +8,7 @@
 
 .main-apropos {
   padding-bottom: 45px;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -20,8 +21,8 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   .main-apropos {
     padding-bottom: 10px;
   }
-}
+}*/

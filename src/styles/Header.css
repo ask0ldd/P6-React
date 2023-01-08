@@ -3,8 +3,9 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 68px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   width: 100%;
+  max-width: 1240px;
 }
 
 header img {
@@ -65,5 +66,14 @@ a.active-link {
 
   header img {
     height: 47px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 80px;
+    align-items: center;
   }
 }

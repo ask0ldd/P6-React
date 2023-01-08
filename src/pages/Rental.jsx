@@ -12,7 +12,7 @@ import { Navigate } from 'react-router-dom'
 
 function Rental() {
 
-  let rentalId = useParams().id;
+  let rentalId = useParams().id; // get id from the uri
 
   const [jsonDatas, setJsonDatas] = useState();
 
@@ -35,7 +35,7 @@ function Rental() {
         <Slideshow picslist={rentalDatas.pictures}/>
         <RentalDetails datas={{'rating' : rentalDatas.rating, 'host' : rentalDatas.host, 'title' : rentalDatas.title, 'location' : rentalDatas.location, 'tags' : rentalDatas.tags}}/>
         <div id="collapsesContainer">
-          <Collapse key={"description"+rentalDatas.id} heading="Description" body={rentalDatas.description} headnbodystyle={['rental-heading', 'rental-body']}/>
+          <Collapse key={"description"+rentalDatas.id} heading="Description" body={rentalDatas.description} headnbodystyle={['rental-heading', 'rental-body']}/> {/* heading pass the title of the collapse, body pass the content of the main div */}
           <Collapse key={"equipements"+rentalDatas.id} heading="Equipements" body={rentalDatas.equipments.reduce((ac, cv) => ac+cv+'<br />', '')} headnbodystyle={['rental-heading', 'rental-body']}/>
         </div>
       </main>
