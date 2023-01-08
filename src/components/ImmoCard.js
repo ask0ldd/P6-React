@@ -16,9 +16,3 @@ const ImmoCard = (props) => {
 }*/
 
 export default ImmoCard
-
-/*
-
-        <img src={props.cover} alt="Appartement cosy"/>
-        <p>{props.title}</p>
-*/
