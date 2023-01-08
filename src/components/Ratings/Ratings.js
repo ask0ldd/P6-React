@@ -1,12 +1,11 @@
 import '../../styles/Ratings.css'
-import redstar from '../../assets/redstar.svg'
-import greystar from '../../assets/greystar.svg'
+import Star from './Star'
 
-const Star = (props) => {
+/*const Star = (props) => {
     return (
     <img className="star-red" src={props.src === "redstar" ? redstar : greystar} alt="positive star" />
     )
-}
+}*/
 
 const Ratings = (props) => {
 

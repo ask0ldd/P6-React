@@ -3,7 +3,6 @@ import '../styles/404.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { NavLink } from 'react-router-dom'
-//import FooterExtension from '../components/FooterExtension'
 
 function Page404() {
   return (

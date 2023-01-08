@@ -19,7 +19,7 @@ function Rental() {
   useEffect(() => 
   {
     const fetching = () => fetch(window.location.origin+'/logements.json').then(response => response.json()).then(datas => setJsonDatas(datas)).catch(error=> console.log(error));
-    fetching()
+    fetching() // useeffect needs a function not a promise
   },[]);
   
   if(!jsonDatas) return (<div className="App"><Header/><Footer/></div>) // as long as the promise isnt resolved : footer & header only

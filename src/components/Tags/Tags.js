@@ -1,13 +1,13 @@
 import '../../styles/Tags.css'
+import Tag from './Tag';
 
-//jamais creer un tag isolé
-const Tag = (props) => {
+/*const Tag = (props) => {
     return (
     <div className="tag">
         {props.tagContent}
     </div>
     )
-}
+}*/
 
 const Tags = (props) => {
     return (

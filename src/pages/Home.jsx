@@ -17,8 +17,6 @@ function App() {
       fetching()
     },[]);
 
-  //if(!jsonDatas) return(<div className="App"><Header/><Footer/></div>)
-
   return (
     <div className="App">
       <Header/>
@@ -32,8 +30,3 @@ function App() {
 }
 
 export default App
-
-/*
-        {jsonDatas && <main className='main-home'><Banner key="standard" type="standard"/>
-        <Gallery dataset={jsonDatas} /></main>}
-*/
