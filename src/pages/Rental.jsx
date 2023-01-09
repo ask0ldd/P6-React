@@ -17,8 +17,7 @@ function Rental() {
   
   if(isLoading || isfetchError) return (<div className="App"><Header/><Footer/></div>) // as long as data isnt fetched : footer & header only
 
-  const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0] // check with filter if could find one object containing the useparams id
-  
+  const rentalDatas = Array.prototype.filter.call(jsonDatas, (x) => x.id === rentalId)[0] // check with filter if could find one object containing the useparams id 
   if(rentalDatas === undefined) return (<Navigate to="/404" replace={true} />) // if not : route /404 not defined so 404
 
   return (

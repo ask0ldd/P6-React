@@ -3,7 +3,6 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Footer from '../components/Footer'
-//import { useState } from 'react'
 import { useFetch } from '../hooks/FetchHook'
 
 function App() {
