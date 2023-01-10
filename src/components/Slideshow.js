@@ -22,6 +22,7 @@ const Slideshow = (props) => {
         {imageUrls.length > 1 ? <div className="buttons-container"> 
             <div onClick={prevImg}><img id="prevArrow" src={arrow} alt="arrow previous" /></div>
             <div onClick={nextImg}><img src={arrow} alt="arrow next" /></div>
+            <span className="index">{indexImg+1}/{imageUrls.length}</span>
         </div> : ''}
     </section>
     )
