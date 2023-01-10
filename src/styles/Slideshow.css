@@ -71,6 +71,10 @@
     height: 255px;
   }
 
+  .index {
+    display: none;
+  }
+
   .buttons-container div img {
     height: 20px;
   }

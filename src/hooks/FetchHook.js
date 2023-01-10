@@ -29,8 +29,7 @@ export function useFetch(url) {
             
         fetchData()
 
-    }, [url])
+    }, [url]) // url to avoid infinite loop triggered by useState uses.
 
 return [isLoading, fetchedData, isError]
-
 }
