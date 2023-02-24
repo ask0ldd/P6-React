@@ -2,4 +2,4 @@ Implementing this frontend was part of my web dev cursus. The use of CRA was a p
 
 A few weeks later, I decided to redesign most of the components without drifting too far from the original prototype. 
 
-Here is the working version of this redesign : https://ask0ldd.github.io/P6-Redesign/
+My redesign is accessible through this second repo : https://ask0ldd.github.io/P6-Redesign/
