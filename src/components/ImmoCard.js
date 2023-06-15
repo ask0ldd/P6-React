@@ -1,11 +1,11 @@
 import '../styles/ImmoCard.css'
 //import { PropTypes } from 'prop-types'
 
-const ImmoCard = (props) => {
+const ImmoCard = ({cover, title}) => {
     return (
     <article className="immocard">
-        <img src={props.cover} alt="Appartement cosy"/>
-        <p>{props.title}</p>
+        <img src={cover} alt="Appartement cosy"/>
+        <p>{title}</p>
     </article>
     )
 }

@@ -7,7 +7,7 @@ import Star from './Star'
     )
 }*/
 
-const Ratings = (props) => {
+const Ratings = ({rating}) => {
 
     const buildRatings = (x) => 
     {
@@ -17,7 +17,7 @@ const Ratings = (props) => {
         return ratings
     }
 
-    const ratingsArray = buildRatings(parseInt(props.rating))
+    const ratingsArray = buildRatings(parseInt(rating))
 
     return (
     <div className="starsContainer">

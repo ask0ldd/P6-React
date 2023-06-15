@@ -1,9 +1,9 @@
 import '../../styles/Tags.css'
 
-const Tag = (props) => {
+const Tag = ({tagContent}) => {
     return (
     <div className="tag">
-        {props.tagContent}
+        {tagContent}
     </div>
     )
 }

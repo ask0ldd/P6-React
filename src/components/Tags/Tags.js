@@ -9,10 +9,10 @@ import Tag from './Tag';
     )
 }*/
 
-const Tags = (props) => {
+const Tags = ({tags}) => {
     return (
     <div className="tagsContainer">
-        {props.tags.map((tg, index)=>(<Tag key={index} tagContent={tg} />))}
+        {tags.map((tg, index)=>(<Tag key={index} tagContent={tg} />))}
     </div>
     )
 }

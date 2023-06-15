@@ -1,9 +1,9 @@
 import '../styles/Banner.css'
 
-const Banner = (props) => {
+const Banner = ({type}) => {
 
-    const bannerText = props.type === 'standard' ? '<div>Chez vous,&nbsp;</div><div>partout et ailleurs</div>' : ''
-    const bannerCSSClass = props.type !== 'standard' ? 'banner-'+props.type : 'banner'
+    const bannerText = type === 'standard' ? '<div>Chez vous,&nbsp;</div><div>partout et ailleurs</div>' : ''
+    const bannerCSSClass = type !== 'standard' ? 'banner-'+type : 'banner'
 
     return (
     <section className={bannerCSSClass} dangerouslySetInnerHTML={{__html:bannerText}} >

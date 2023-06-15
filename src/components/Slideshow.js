@@ -2,9 +2,9 @@ import '../styles/Slideshow.css'
 import { useState } from 'react'
 import arrow from '../assets/arrow-right.svg'
 
-const Slideshow = (props) => {
+const Slideshow = ({picslist}) => {
 
-    const imageUrls = props.picslist
+    const imageUrls = picslist // array of urls passed as a prop
 
     const [indexImg, setIndexImg] = useState(0);
 
