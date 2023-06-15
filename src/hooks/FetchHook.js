@@ -11,6 +11,7 @@ export function useFetch(url) {
         if (!url) return
 
         async function fetchData() {
+
             setError(false)
             setLoading(true)
 
