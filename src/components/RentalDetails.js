@@ -2,6 +2,7 @@ import '../styles/RentalDetails.css'
 import Tags from '../components/Tags/Tags'
 import Ratings from '../components/Ratings/Ratings'
 import Host from '../components/Host'
+import { PropTypes } from 'prop-types'
 
 const RentalDetails = ({datas}) => {
   return (
@@ -16,6 +17,19 @@ const RentalDetails = ({datas}) => {
       <Ratings rating={datas.rating} />
     </div>
   </section>
+  )
+}
+
+RentalDetails.propTypes = {
+  datas: PropTypes.arrayOf(
+      PropTypes.shape({
+          title: PropTypes.string,
+          description: PropTypes.string,
+          host: PropTypes.object,
+          rating: PropTypes.string,
+          location: PropTypes.string,
+          tags: PropTypes.arrayOf(PropTypes.string),
+      })
   )
 }
   
