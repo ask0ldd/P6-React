@@ -1,5 +1,6 @@
 import '../../styles/Tags.css'
 import Tag from './Tag';
+import { PropTypes } from 'prop-types'
 
 /*const Tag = (props) => {
     return (

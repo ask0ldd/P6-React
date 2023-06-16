@@ -1,5 +1,6 @@
 import '../../styles/Ratings.css'
 import Star from './Star'
+import { PropTypes } from 'prop-types'
 
 /*const Star = (props) => {
     return (
@@ -24,6 +25,10 @@ const Ratings = ({rating}) => {
         {ratingsArray.map((r, index) => <Star key={index} src={r.src}/>)}
     </div>
     )
+}
+
+Star.propTypes = {
+    rating: PropTypes.string,
 }
  
 export default Ratings

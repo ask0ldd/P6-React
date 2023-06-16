@@ -22,10 +22,7 @@ const Collapse = ({headnbodystyle, body, heading}) => {
 }
 
 Collapse.propTypes = {
-    headnbodystyle: PropTypes.arrayOf({
-            name: PropTypes.string,
-            picture: PropTypes.string,
-    }), 
+    headnbodystyle: PropTypes.arrayOf(PropTypes.string), 
     body: PropTypes.string,
     heading: PropTypes.string,
 }
