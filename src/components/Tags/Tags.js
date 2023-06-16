@@ -17,5 +17,9 @@ const Tags = ({tags}) => {
     </div>
     )
 }
+
+Tags.propTypes = {
+    tags: PropTypes.arrayOf(PropTypes.string),
+}
  
 export default Tags

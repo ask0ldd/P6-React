@@ -9,4 +9,8 @@ const Tag = ({tagContent}) => {
     )
 }
 
+Tag.propTypes = {
+    tagContent: PropTypes.string,
+}
+
 export default Tag
