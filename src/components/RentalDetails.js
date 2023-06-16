@@ -21,8 +21,7 @@ const RentalDetails = ({datas}) => {
 }
 
 RentalDetails.propTypes = {
-  datas: PropTypes.arrayOf(
-      PropTypes.shape({
+  datas: PropTypes.shape({
           title: PropTypes.string,
           description: PropTypes.string,
           host: PropTypes.object,
@@ -30,7 +29,6 @@ RentalDetails.propTypes = {
           location: PropTypes.string,
           tags: PropTypes.arrayOf(PropTypes.string),
       })
-  )
 }
   
 export default RentalDetails
