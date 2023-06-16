@@ -28,7 +28,7 @@ RentalDetails.propTypes = {
           rating: PropTypes.string,
           location: PropTypes.string,
           tags: PropTypes.arrayOf(PropTypes.string),
-      })
+  })
 }
   
 export default RentalDetails

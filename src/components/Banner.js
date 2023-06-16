@@ -1,4 +1,5 @@
 import '../styles/Banner.css'
+import { PropTypes } from 'prop-types'
 
 const Banner = ({type}) => {
 
@@ -9,6 +10,10 @@ const Banner = ({type}) => {
     <section className={bannerCSSClass} dangerouslySetInnerHTML={{__html:bannerText}} >
     </section>
     )
+}
+
+Banner.propTypes = {
+    type: PropTypes.string,
 }
 
 export default Banner

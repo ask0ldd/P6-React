@@ -1,6 +1,7 @@
 import '../styles/Slideshow.css'
 import { useState } from 'react'
 import arrow from '../assets/arrow-right.svg'
+import { PropTypes } from 'prop-types'
 
 const Slideshow = ({picslist}) => {
 
@@ -26,6 +27,10 @@ const Slideshow = ({picslist}) => {
         </div> : ''}
     </section>
     )
+}
+
+Slideshow.propTypes = {
+    picslist: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default Slideshow
