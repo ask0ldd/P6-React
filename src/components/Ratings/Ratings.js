@@ -2,12 +2,6 @@ import '../../styles/Ratings.css'
 import Star from './Star'
 import { PropTypes } from 'prop-types'
 
-/*const Star = (props) => {
-    return (
-    <img className="star-red" src={props.src === "redstar" ? redstar : greystar} alt="positive star" />
-    )
-}*/
-
 const Ratings = ({rating}) => {
 
     const buildRatings = (x) => 

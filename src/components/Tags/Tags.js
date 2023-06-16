@@ -2,14 +2,6 @@ import '../../styles/Tags.css'
 import Tag from './Tag';
 import { PropTypes } from 'prop-types'
 
-/*const Tag = (props) => {
-    return (
-    <div className="tag">
-        {props.tagContent}
-    </div>
-    )
-}*/
-
 const Tags = ({tags}) => {
     return (
     <div className="tagsContainer">
