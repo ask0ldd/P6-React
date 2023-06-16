@@ -2,6 +2,7 @@ import '../styles/Gallery.css'
 import ImmoCard from './ImmoCard'
 import { Link } from 'react-router-dom'
 import { ErrorBox } from './ErrorBox'
+import { PropTypes } from 'prop-types'
 // import { Suspense } from 'react'
 
 const Gallery = ({dataset, error, loadingState}) => {
@@ -23,5 +24,21 @@ const Gallery = ({dataset, error, loadingState}) => {
         <div>Loading...</div>
     )
 }*/
+
+Gallery.propTypes = {
+    dataset: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            title: PropTypes.string,
+            pictures: PropTypes.arrayOf(PropTypes.string),
+            description: PropTypes.string,
+            host: PropTypes.object,
+            rating: PropTypes.string,
+            location: PropTypes.string,
+            equipments: PropTypes.arrayOf(PropTypes.string),
+            tags: PropTypes.arrayOf(PropTypes.string),
+        })
+    )
+  }
 
 export default Gallery

@@ -1,5 +1,5 @@
 import '../styles/ImmoCard.css'
-//import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types'
 
 const ImmoCard = ({cover, title}) => {
     return (
@@ -10,9 +10,9 @@ const ImmoCard = ({cover, title}) => {
     )
 }
 
-/*ImmoCard.propTypes = {
+ImmoCard.propTypes = {
     title: PropTypes.string,
     cover: PropTypes.string
-}*/
+}
 
 export default ImmoCard
