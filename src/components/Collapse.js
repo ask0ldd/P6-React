@@ -2,6 +2,7 @@ import '../styles/Collapse.css'
 import { useState } from 'react'
 import arrowUp from '../assets/collapse-up.svg'
 import arrowDown from '../assets/collapse-down.svg'
+import { PropTypes } from 'prop-types'
 
 
 const Collapse = ({headnbodystyle, body, heading}) => {
@@ -18,6 +19,15 @@ const Collapse = ({headnbodystyle, body, heading}) => {
         <div className={'collapse__body '+ headnbodystyle[1]} dangerouslySetInnerHTML={{__html: body}} /> /* innerhtml to interpret the inserted <br>  */}
     </article>
     )
+}
+
+Collapse.propTypes = {
+    headnbodystyle: PropTypes.arrayOf({
+            name: PropTypes.string,
+            picture: PropTypes.string,
+    }), 
+    body: PropTypes.string,
+    heading: PropTypes.string,
 }
 
 export default Collapse

@@ -39,6 +39,6 @@ Gallery.propTypes = {
             tags: PropTypes.arrayOf(PropTypes.string),
         })
     )
-  }
+}
 
 export default Gallery
