@@ -19,12 +19,6 @@ const Gallery = ({dataset, error, loadingState}) => {
     )
 }
 
-/*const Loading = () => {
-    return(
-        <div>Loading...</div>
-    )
-}*/
-
 Gallery.propTypes = {
     dataset: PropTypes.arrayOf(
         PropTypes.shape({
@@ -42,3 +36,9 @@ Gallery.propTypes = {
 }
 
 export default Gallery
+
+/*const Loading = () => {
+    return(
+        <div>Loading...</div>
+    )
+}*/

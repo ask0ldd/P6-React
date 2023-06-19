@@ -30,7 +30,7 @@ export function useFetch(url) {
             
         fetchData()
 
-    }, [url]) // url to avoid infinite loop triggered by useState uses.
+    }, [url]) // url to avoid an every re-render triggering.
 
 return [isLoading, fetchedData, isError]
 }
